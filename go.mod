@@ -3,7 +3,6 @@ module github.com/Azzamjiul/bookstore_oauth-go
 go 1.17
 
 require (
-	github.com/azzamjiul/bookstore_oauth-go v0.0.0-20211228112855-3dcf9fe2388f
 	github.com/parnurzeal/gorequest v0.2.16
 	github.com/pkg/errors v0.9.1
 )
