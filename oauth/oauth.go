@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/azzamjiul/bookstore_oauth-go/oauth/error_utils"
-	"github.com/azzamjiul/bookstore_oauth-go/oauth/http_utils"
+	"bookstore_oauth-go/oauth/error_utils"
+	"bookstore_oauth-go/oauth/http_utils"
 )
 
 const (
