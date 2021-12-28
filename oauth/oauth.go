@@ -73,6 +73,9 @@ func AuthenticateRequest(request *http.Request) *error_utils.RestErr {
 
 	at, err := getAccessToken(accessToken)
 	if err != nil {
+		if err.Status == http.StatusNotFound {
+			return nil
+		}
 		return err
 	}
 
