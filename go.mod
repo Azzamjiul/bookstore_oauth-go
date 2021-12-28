@@ -1,4 +1,4 @@
-module github.com/Azzamjiul/bookstore_oauth-go
+module github.com/azzamjiul/bookstore_oauth-go
 
 go 1.17
 
