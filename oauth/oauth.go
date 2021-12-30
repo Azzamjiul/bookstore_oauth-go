@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/azzamjiul/bookstore_oauth-go/oauth/error_utils"
+	"github.com/Azzamjiul/bookstore_utils-go/error_utils"
 	"github.com/azzamjiul/bookstore_oauth-go/oauth/http_utils"
 )
 
@@ -100,7 +100,7 @@ func getAccessToken(access_token string) (*accessToken, *error_utils.RestErr) {
 
 	_, err := http_utils.New().Get(fmt.Sprintf("http://localhost:8081/oauth/access_token/%s", access_token), headers, &at)
 	if err != nil {
-		return nil, error_utils.NewInternalServerError(err.Error())
+		return nil, error_utils.NewInternalServerError(err.Error(), err)
 	}
 
 	return &at, nil
